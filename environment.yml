@@ -1,0 +1,28 @@
+name: dengue-ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      # Web application
+      - fastapi
+      - uvicorn[standard]
+      - jinja2
+      - python-multipart
+      - itsdangerous
+      - email-validator
+      - python-dotenv
+      - sqlalchemy
+      - psycopg2-binary
+      - argon2-cffi
+      # Data / ML
+      - pandas
+      - numpy
+      - scikit-learn
+      - catboost
+      - joblib
+      # Testing
+      - pytest
+      - httpx
